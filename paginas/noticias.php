@@ -89,7 +89,7 @@
         }
         return $subdomios_lista;
       }
-      $dominio = "https://g1.globo.com/al/alagoas/";
+      $dominio = "https://g1.globo.com/distrito-federal/";
       $palavrasChave = ["alagoas","noticia"];
       $lista_sites = buscaTopico($dominio,$palavrasChave);
       

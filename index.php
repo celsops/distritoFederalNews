@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alagoas notícias</title>
+    <title>Distrito Federal notícias</title>
     <link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/main.css">
     <script src="js/jquery.min.js"></script>
@@ -50,7 +50,7 @@
         </div>
       </li>
       <li>
-        <img src="./img/slide2.jpg"> 
+        <img src="./img/slide2.jpeg"> 
         <div class="caption left-align">
           <h3>Custo de vida da sua cidade</h3>
         </div>
@@ -102,7 +102,7 @@
     }
     return $subdomios_lista;
   }
-  function main($dominio="https://g1.globo.com/al/alagoas/",$palavrasChave=["alagoas","noticia"]){
+  function main($dominio="https://g1.globo.com/df/distrito-federal/",$palavrasChave=["distrito-federal","noticia"]){
     $lista_sites = buscaTopico($dominio,$palavrasChave);
     
     $tamanho_lista = count( $lista_sites)-1;
@@ -125,7 +125,7 @@
     foreach ($conteudo as $paragrafo){
         $texto = pq($paragrafo);
         // echo '<script>console.log("'.strip_tags($texto).'");</script>';
-        if (trim(strip_tags($texto))=="Veja mais notícias da região no G1 Alagoas"){}
+        if (trim(strip_tags($texto))=="Leia mais notícias sobre a região no G1 DF."){}
         else{
             echo '<div> <p >'.$texto.'</p></div>';
         }

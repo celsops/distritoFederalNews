@@ -50,7 +50,7 @@
     </div>
   <?php
     include_once '../phpQuery/phpQuery/phpQuery.php';
-    $dominio = "https://pt.wikipedia.org/wiki/Hist%C3%B3ria_de_Alagoas";
+    $dominio = "https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)";
     phpQuery::newDocumentFileHTML($dominio);
     $titulo  = pq('.firstHeading');
     $conteudo = pq('.mw-body-content');

@@ -49,12 +49,12 @@
   <?php
     include_once '../phpQuery/phpQuery/phpQuery.php';
     
-    $dominio = "http://www.custodevida.com.br/al/maceio";
+    $dominio = "http://www.custodevida.com.br/df/brasilia/";
 
     phpQuery::newDocumentFileHTML($dominio);
     
     $conteudo = pq('table');
-    $localidade = "Maceió - AL";
+    $localidade = "Brasília - DF";
     echo "<div><h1>".$localidade."</h1></div><br>";
 
     echo '<div class="conteudo">'.$conteudo. '</div>';
